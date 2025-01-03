@@ -123,13 +123,13 @@ def print_definition(definition_data):
         else definition_data[next(iter(definition_data))]
     )
     language = data[0]["language"]
-    print(f"Showing definition in {language}")
+    print(f"{language}")
 
     if len(data) > 0:
-        for data in data:
-            print(data["partOfSpeech"] + "\n")
+        for per_data in data:
+            print(per_data["partOfSpeech"] + "\n")
             definition_count = 1
-            for definition in data["definitions"]:
+            for definition in per_data["definitions"]:
                 if len(definition["definition"]) > 0:
 
                     definition_text = (
@@ -158,7 +158,8 @@ def print_definition(definition_data):
                         definition_count += 1
                     else:
                         break
-            print("-" * 50)
+            if len(data) > 1:
+                print("-" * 50)
 
 
 def main():
