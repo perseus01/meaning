@@ -87,23 +87,6 @@ To create a standalone binary:
 
 ---
 
-## Example Commands
-
-1. Fetching the meaning of a word:
-   ```bash
-   python3 meaning.py dictionary
-   ```
-2. Viewing the help menu:
-   ```bash
-   python3 meaning.py -h
-   ```
-3. Running the compiled binary:
-   ```bash
-   ./meaning universe
-   ```
-
----
-
 ## Example Output
 
 ```
